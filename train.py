@@ -3,7 +3,7 @@ import joblib
 import os
 from sklearn.ensemble import RandomForestClassifier
 
-df = pd.read_csv("s3://mlops-free-demo/raw/churn.csv")
+df = pd.read_csv("s3://mlops-free-demo/raw/churn_demo.csv")
 
 X = df.drop("churn", axis=1)
 y = df["churn"]
